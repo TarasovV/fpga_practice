@@ -1,0 +1,228 @@
+
+*** Running vivado
+    with args -log computing_unit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source computing_unit.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source computing_unit.tcl -notrace
+Command: synth_design -top computing_unit -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 37644
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'computing_unit' [C:/projs/RTL/computing_unit.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [C:/projs/RTL/instruction_memory.sv:23]
+INFO: [Synth 8-3876] $readmem data file 'C:/projs/RTL/test_data.txt' is read successfully [C:/projs/RTL/instruction_memory.sv:34]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (1#1) [C:/projs/RTL/instruction_memory.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'program_counter' does not match port width (10) of module 'instruction_memory' [C:/projs/RTL/computing_unit.sv:93]
+INFO: [Synth 8-6157] synthesizing module 'main_decoder' [C:/projs/RTL/main_decoder.sv:39]
+INFO: [Synth 8-226] default block is never used [C:/projs/RTL/main_decoder.sv:94]
+WARNING: [Synth 8-151] case item 3'b000 is unreachable [C:/projs/RTL/main_decoder.sv:128]
+INFO: [Synth 8-226] default block is never used [C:/projs/RTL/main_decoder.sv:128]
+INFO: [Synth 8-6155] done synthesizing module 'main_decoder' (2#1) [C:/projs/RTL/main_decoder.sv:39]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/projs/RTL/register_file.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (3#1) [C:/projs/RTL/register_file.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/projs/RTL/top.sv:26]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/projs/RTL/top.sv:39]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (4#1) [C:/projs/RTL/top.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [C:/projs/RTL/data_memory.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (5#1) [C:/projs/RTL/data_memory.sv:23]
+WARNING: [Synth 8-689] width (1) of port connection 'res_dm_o' does not match port width (32) of module 'data_memory' [C:/projs/RTL/computing_unit.sv:140]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/projs/RTL/computing_unit.sv:204]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/projs/RTL/computing_unit.sv:212]
+INFO: [Synth 8-6155] done synthesizing module 'computing_unit' (6#1) [C:/projs/RTL/computing_unit.sv:22]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [Synth 8-327] inferring latch for variable 'ex_op_a_sel_o_reg' [C:/projs/RTL/main_decoder.sv:114]
+WARNING: [Synth 8-327] inferring latch for variable 'ex_op_b_sel_o_reg' [C:/projs/RTL/main_decoder.sv:115]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_op_o_reg' [C:/projs/RTL/main_decoder.sv:95]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_req_o_reg' [C:/projs/RTL/main_decoder.sv:118]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_we_o_reg' [C:/projs/RTL/main_decoder.sv:117]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_size_o_reg' [C:/projs/RTL/main_decoder.sv:119]
+WARNING: [Synth 8-327] inferring latch for variable 'gpr_we_a_o_reg' [C:/projs/RTL/main_decoder.sv:116]
+WARNING: [Synth 8-327] inferring latch for variable 'wb_src_sel_o_reg' [C:/projs/RTL/main_decoder.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'branch_o_reg' [C:/projs/RTL/main_decoder.sv:121]
+WARNING: [Synth 8-327] inferring latch for variable 'jal_o_reg' [C:/projs/RTL/main_decoder.sv:122]
+WARNING: [Synth 8-327] inferring latch for variable 'jalr_o_reg' [C:/projs/RTL/main_decoder.sv:123]
+WARNING: [Synth 8-327] inferring latch for variable 'Flag_reg' [C:/projs/RTL/top.sv:43]
+WARNING: [Synth 8-327] inferring latch for variable 'Result_reg' [C:/projs/RTL/top.sv:42]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
++---Muxes : 
+	  17 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 3     
+	  12 Input    8 Bit        Muxes := 4     
+	  10 Input    5 Bit        Muxes := 1     
+	  12 Input    5 Bit        Muxes := 1     
+	  12 Input    3 Bit        Muxes := 2     
+	  12 Input    2 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 8     
+	   9 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 3     
+	   7 Input    1 Bit        Muxes := 2     
+	  12 Input    1 Bit        Muxes := 10    
+	  17 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1136.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1136.551 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1136.551 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1136.551 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1136.551 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 421fb7cc
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1136.551 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/projs/projects/RV32I_CPU_w_DATAPATH/RV32I_CPU_w_DATAPATH.runs/synth_1/computing_unit.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file computing_unit_utilization_synth.rpt -pb computing_unit_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 19 07:11:41 2022...

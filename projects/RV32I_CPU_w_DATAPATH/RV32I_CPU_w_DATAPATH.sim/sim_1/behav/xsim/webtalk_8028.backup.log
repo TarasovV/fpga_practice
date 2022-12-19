@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Nov 21 15:32:12 2022
+# Process ID: 8028
+# Current directory: C:/projs/projects/computing_unit/computing_unit.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/projs/projects/computing_unit/computing_unit.sim/sim_1/behav/xsim/xsim.dir/cpu_testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/projs/projects/computing_unit/computing_unit.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/projs/projects/computing_unit/computing_unit.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/projs/projects/computing_unit/computing_unit.sim/sim_1/behav/xsim/xsim.dir/cpu_testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 21 15:32:13 2022...

@@ -1,0 +1,12 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+C:/projs/RTL/computing_unit.sv,1671458635,systemVerilog,,C:/projs/RTL/data_memory.sv,,computing_unit,,uvm,,,,,,
+C:/projs/RTL/data_memory.sv,1671459101,systemVerilog,,C:/projs/RTL/instruction_memory.sv,,data_memory,,uvm,,,,,,
+C:/projs/RTL/instruction_memory.sv,1671427816,systemVerilog,,C:/projs/RTL/top.sv,,instruction_memory,,uvm,,,,,,
+C:/projs/RTL/main_decoder.sv,1671419425,systemVerilog,,C:/projs/RTL/register_file.sv,,main_decoder;opercode,,uvm,,,,,,
+C:/projs/RTL/register_file.sv,1671453655,systemVerilog,,C:/projs/Testbench/cpu_testbench.sv,,register_file,,uvm,,,,,,
+C:/projs/RTL/top.sv,1671457700,systemVerilog,C:/projs/RTL/main_decoder.sv,C:/projs/RTL/main_decoder.sv,,ALU;ALUOps,,uvm,,,,,,
+C:/projs/Testbench/cpu_testbench.sv,1671450970,systemVerilog,,,,cpu_testbench,,uvm,,,,,,
+C:/projs/projects/RV32I_CPU_w_DATAPATH/RV32I_CPU_w_DATAPATH.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,uvm,,,,,,

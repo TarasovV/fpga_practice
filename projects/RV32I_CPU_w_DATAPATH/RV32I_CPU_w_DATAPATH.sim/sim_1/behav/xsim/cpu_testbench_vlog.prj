@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../../RTL/computing_unit.sv" \
+"../../../../../../RTL/data_memory.sv" \
+"../../../../../../RTL/instruction_memory.sv" \
+"../../../../../../RTL/top.sv" \
+"../../../../../../RTL/main_decoder.sv" \
+"../../../../../../RTL/register_file.sv" \
+"../../../../../../Testbench/cpu_testbench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

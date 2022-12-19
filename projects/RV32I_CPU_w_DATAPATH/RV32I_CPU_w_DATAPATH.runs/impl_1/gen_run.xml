@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1671423127">
+  <File Type="PA-TCL" Name="computing_unit.tcl"/>
+  <File Type="REPORTS-TCL" Name="computing_unit_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="computing_unit.msk"/>
+  <File Type="RDI-RDI" Name="computing_unit.vdi"/>
+  <File Type="BG-BIT" Name="computing_unit.bit"/>
+  <File Type="BG-DRC" Name="computing_unit.drc"/>
+  <File Type="BG-BGN" Name="computing_unit.bgn"/>
+  <File Type="BG-BIN" Name="computing_unit.bin"/>
+  <File Type="BITSTR-RBT" Name="computing_unit.rbt"/>
+  <File Type="BITSTR-NKY" Name="computing_unit.nky"/>
+  <File Type="BITSTR-BMM" Name="computing_unit_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="computing_unit.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="computing_unit.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="computing_unit.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="computing_unit_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="computing_unit.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="computing_unit_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="computing_unit_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="computing_unit_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="computing_unit_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="computing_unit_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="computing_unit_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="computing_unit_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="computing_unit_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="computing_unit_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="computing_unit_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="computing_unit_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="computing_unit_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="computing_unit.pdi"/>
+  <File Type="RCFI_FILE" Name="computing_unit.rcfi"/>
+  <File Type="CFI_FILE" Name="computing_unit.cfi"/>
+  <File Type="RNPI_FILE" Name="computing_unit.rnpi"/>
+  <File Type="NPI_FILE" Name="computing_unit.npi"/>
+  <File Type="RBD_FILE" Name="computing_unit.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../RTL/data_memory.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../RTL/instruction_memory.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../RTL/top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../RTL/main_decoder.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../RTL/register_file.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../RTL/computing_unit.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../RTL/test_data.txt">
+      <FileInfo SFType="MIF">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="computing_unit"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

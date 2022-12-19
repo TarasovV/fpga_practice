@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Dec 19 07:12:16 2022
+# Process ID: 15872
+# Current directory: C:/projs/projects/RV32I_CPU_w_DATAPATH/RV32I_CPU_w_DATAPATH.runs/impl_1
+# Command line: vivado.exe -log computing_unit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source computing_unit.tcl -notrace
+# Log file: C:/projs/projects/RV32I_CPU_w_DATAPATH/RV32I_CPU_w_DATAPATH.runs/impl_1/computing_unit.vdi
+# Journal file: C:/projs/projects/RV32I_CPU_w_DATAPATH/RV32I_CPU_w_DATAPATH.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source computing_unit.tcl -notrace

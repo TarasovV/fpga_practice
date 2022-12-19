@@ -1,0 +1,10 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 7380535cf5694fce92d77641c7b91056 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_testbench_behav xil_defaultlib.cpu_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'program_counter' [C:/projs/RTL/computing_unit.sv:101]
+WARNING: [VRFC 10-3823] variable 'alu_res_o' might have multiple concurrent drivers [C:/projs/RTL/computing_unit.sv:159]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
